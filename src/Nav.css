@@ -1,0 +1,33 @@
+#nav {
+    background-color: #111;
+    height: 8%;
+    width: 100%;
+    display: flex;
+}
+
+#nav-logo {
+    height: 100%;
+    margin-left: 1rem;
+}
+
+#nav-points {
+    display: flex;
+    margin: 0 24%;
+    width: 100%;
+}
+
+.nav-point {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s;
+    padding: 20px;
+    width: 100%;
+}
+
+.nav-point:hover {
+    background-color: #222;
+}
