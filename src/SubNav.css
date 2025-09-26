@@ -1,0 +1,40 @@
+.sub-navbar {
+  background-color: #2a2a2a;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+  position: fixed;
+  top: 50px; /* right below the main navbar */
+  left: 0;
+  z-index: 900;
+}
+
+.sub-navbar-inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.sub-navbar-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sub-navbar-links a:hover {
+  background-color: #444;
+  color: #fff;
+}
