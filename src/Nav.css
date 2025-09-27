@@ -2,7 +2,9 @@
     background-color: #111;
     height: 8%;
     width: 100%;
+    padding: 0 16%;
     display: flex;
+    user-select: none;
 }
 
 #nav-logo {
@@ -12,22 +14,66 @@
 
 #nav-points {
     display: flex;
-    margin: 0 24%;
+    margin: 0 20%;
     width: 100%;
+    height: 100%;
+    padding: 12px;
+    gap: 16px;
 }
 
 .nav-point {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     font-size: 20px;
     transition: 0.2s;
-    padding: 20px;
     width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .nav-point:hover {
     background-color: #222;
+}
+
+#nav-hamburger {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1.2rem;
+    display: none;
+}
+
+#nav-menu-bg {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 92%;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+#nav-menu {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 25%;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+}
+
+.nav-hide {
+    display: none !important;
+}
+
+.nav-menu-point {
+    font-size: 24px;
+    margin: 12px;
+    margin-left: auto;
 }

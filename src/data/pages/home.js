@@ -1,7 +1,7 @@
 const data = {
     title: "FCM Essentials",
     path: "/",
-    content: (<>
+    content: ((redirect) => <>
         
     </>)
 }

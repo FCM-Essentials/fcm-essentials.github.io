@@ -2,7 +2,7 @@
 const data = {
     title: "About",
     path: "/about",
-    content: (<>
+    content: ((redirect) => <>
         Add some stuff here later
     </>)
 }

@@ -5,19 +5,19 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 
 console.log(pages)
 
-
-function RedirectWrapper({ children }) {
+function RedirectWrapper({ children, title }) {
     const navigate = useNavigate()
     const redirect = (target) => {
         const path = target.startsWith("/") ? target : `/${target}`
         if (target.startsWith("http")) {
-            window.open(target, "_blank")
+			document.getElementById("open-in-new-link").textContent = target
+			document.getElementById("open-in-new").style.display = "block"
         } else {
             navigate(path)
         }
     }
 
-    return <Page redirect={redirect}>{children}</Page>
+    return <Page redirect={redirect} title={ title }>{children}</Page>
 }
 
 function App() {
@@ -29,9 +29,10 @@ function App() {
                     pages.map((page, index) => (
 
                         <Route key={index} path={page.path} element={
-                            <RedirectWrapper>
+                            <RedirectWrapper title={page.title}>
                                 {page.content}
                             </RedirectWrapper>
+							
                         } />
 
                     ))

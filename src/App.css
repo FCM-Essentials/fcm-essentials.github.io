@@ -9,3 +9,12 @@ html, body, #root {
     box-sizing: border-box;
     color: white;
 }
+
+.clickable {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.clickable:hover {
+    cursor: pointer !important;
+}

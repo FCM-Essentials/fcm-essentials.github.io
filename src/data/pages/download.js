@@ -2,9 +2,9 @@
 const data = {
     title: "Download",
     path: "/download",
-    content: (<>
-        <h1><a href="https://modrinth.com/mod/fcm-essentials">Modrinth</a></h1>
-        <h1><a href="https://www.curseforge.com/minecraft/mc-mods/fcm-essentials">CurseForge</a></h1>
+    content: ((redirect) => <>
+        <h1 onClick={() => redirect("https://modrinth.com/mod/fcm-essentials")} className="clickable">Modrinth</h1>
+        <h1 onClick={() => redirect("https://www.curseforge.com/minecraft/mc-mods/fcm-essentials")} className="clickable">CurseForge</h1>
     </>)
 }
 
