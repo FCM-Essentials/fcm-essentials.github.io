@@ -1,5 +1,5 @@
 import './App.css';
-import Page from './Page';
+import Page from './components/page/Page';
 import pages from './data/getPages'
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"
 

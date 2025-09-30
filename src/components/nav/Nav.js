@@ -1,5 +1,5 @@
 import "./Nav.css"
-import logo from './assets/logo.png';
+import logo from '../../assets/logo.png';
 import { Menu } from "lucide-react";
 
 const navPoints = [
@@ -8,8 +8,8 @@ const navPoints = [
         "/projects"
     ],
     [
-        "Download",
-        "/download"
+        "Downloads",
+        "/downloads"
         
     ],
     [
@@ -19,6 +19,10 @@ const navPoints = [
     [
         "Discord",
         "https://discord.gg/MZr5KpdneD"
+    ],
+    [
+        "Essentials",
+        "/essentials"
     ]
 ]
 
@@ -43,7 +47,7 @@ function Nav({ redirect }) {
                 <div id="nav-hamburger" onClick={() => toggleMenu()}>
                     <Menu size={36} className="clickable"></Menu>
                 </div>
-                <div id="nav-menu-bg">
+                <div id="nav-menu-bg" className="nav-hide">
                     <div id="nav-menu">
                         {
                             navPoints.map(([title, link], index) => (
